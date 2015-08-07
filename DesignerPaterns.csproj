@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BCD8BA01-7076-480A-8DC9-7F9FF1FD6043}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesignerPaterns</RootNamespace>
+    <AssemblyName>DesignerPaterns</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.UnitTestFramework.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5bf63060baa03a11, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.UnitTestFramework.Extensions.1.0.0.3\lib\net40\Microsoft.UnitTestFramework.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aprovado .cs" />
+    <Compile Include="Arrojado .cs" />
+    <Compile Include="CalculadorDeDescontos.cs" />
+    <Compile Include="CalculadorDeImpostos.cs" />
+    <Compile Include="CalculoTeste.cs" />
+    <Compile Include="Negativo .cs" />
+    <Compile Include="Positivo.cs" />
+    <Compile Include="Conservador .cs" />
+    <Compile Include="Conta .cs" />
+    <Compile Include="Desconto.cs" />
+    <Compile Include="DescontoPorCincoItens.cs" />
+    <Compile Include="DescontoPorMaisDeQuinhentosReais.cs" />
+    <Compile Include="DescontoPorVendaCasada.cs" />
+    <Compile Include="EmAprovacao .cs" />
+    <Compile Include="EstadoDaConta .cs" />
+    <Compile Include="EstadoDeUmOrcamento.cs" />
+    <Compile Include="Filtro.cs" />
+    <Compile Include="FiltroMaiorQue500MilReais .cs" />
+    <Compile Include="FiltroMenorQue100Reais.cs" />
+    <Compile Include="Finalizado .cs" />
+    <Compile Include="Formato.cs" />
+    <Compile Include="GerenciadorDeRelatorio.cs" />
+    <Compile Include="ICCC.cs" />
+    <Compile Include="ICMS.cs" />
+    <Compile Include="ICPP .cs" />
+    <Compile Include="IHIT.cs" />
+    <Compile Include="IImposto.cs" />
+    <Compile Include="IKCV.cs" />
+    <Compile Include="Imposto.cs" />
+    <Compile Include="ImpostoMuitoAlto.cs" />
+    <Compile Include="Investimento .cs" />
+    <Compile Include="ISS.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="Moderado .cs" />
+    <Compile Include="Orcamento.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RealizadorDeInvestimentos .cs" />
+    <Compile Include="Relatorio .cs" />
+    <Compile Include="RelatorioComplexo .cs" />
+    <Compile Include="RelatorioSimples .cs" />
+    <Compile Include="Reprovado .cs" />
+    <Compile Include="Requisicao.cs" />
+    <Compile Include="Resposta .cs" />
+    <Compile Include="RespostaEmCsv .cs" />
+    <Compile Include="RespostaEmPorcento.cs" />
+    <Compile Include="RespostaEmXml .cs" />
+    <Compile Include="SemDesconto.cs" />
+    <Compile Include="TemplateDeImpostoCondicional .cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
