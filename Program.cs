@@ -104,20 +104,20 @@ namespace DesignerPaterns
             //                    .Constroi();
 
             /************Observer2****************/
-            NotaFiscalBuilder builder = new NotaFiscalBuilder();
-            builder.AdicionaAcao(new Multiplicador(2));
-            builder.AdicionaAcao(new Multiplicador(3));
-            builder.AdicionaAcao(new Multiplicador(5.5));
+            //NotaFiscalBuilder builder = new NotaFiscalBuilder();
+            //builder.AdicionaAcao(new Multiplicador(2));
+            //builder.AdicionaAcao(new Multiplicador(3));
+            //builder.AdicionaAcao(new Multiplicador(5.5));
 
-            NotaFiscal.NotaFiscal notaFiscal = builder.ParaEmpresa("Caelum")
-                .ComCnpj("123.456.789/0001-10")
-                .ComItem(new ItemDaNota("item 1", 100.0))
-                .ComItem(new ItemDaNota("item 2", 200.0))
-                .ComItem(new ItemDaNota("item 3", 300.0))
-                .ComObservacoes("entregar notaFiscal pessoalmente")
-                .NaDataAtual()
-                .Constroi();
-            Console.ReadKey();
+            //NotaFiscal.NotaFiscal notaFiscal = builder.ParaEmpresa("Caelum")
+            //    .ComCnpj("123.456.789/0001-10")
+            //    .ComItem(new ItemDaNota("item 1", 100.0))
+            //    .ComItem(new ItemDaNota("item 2", 200.0))
+            //    .ComItem(new ItemDaNota("item 3", 300.0))
+            //    .ComObservacoes("entregar notaFiscal pessoalmente")
+            //    .NaDataAtual()
+            //    .Constroi();
+            //Console.ReadKey();
 
         }
 
