@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
+using DesignerPaterns.NotaFiscal;
+
 
 namespace DesignerPaterns
 {
@@ -67,6 +70,59 @@ namespace DesignerPaterns
             //Conta conta= new Conta(500,"naiade","xxx-xx",111222);
             //EstadoDaConta estadoDaConta = new Negativo();
             //estadoDaConta.Deposita(conta, 200);
+
+            /********************BUILDER****************/
+            //NotaFiscalBuilder criador = new NotaFiscalBuilder();
+            //criador.ParaEmpresa("Caelum");
+            //criador.ComCnpj("123.456.789/0001-10");
+            //criador.ComItem(new ItemDaNota("item 1", 100.0));
+            //criador.ComItem(new ItemDaNota("item 2", 200.0));
+            //criador.ComItem(new ItemDaNota("item 3", 300.0));
+            //criador.ComObservacoes("entregar nf pessoalmente");
+            //criador.NaDataAtual();
+
+            //NotaFiscal.NotaFiscal nf = criador.Constroi();
+
+            //Console.WriteLine(nf.Cnpj);
+            //Console.ReadKey();
+
+            /************Observer1****************/
+
+            //NotaFiscalBuilder builder = new NotaFiscalBuilder();
+            //builder.AdicionaAcao(new EnviadorDeEmail());
+            //builder.AdicionaAcao(new NotaFiscalDao());
+            //builder.AdicionaAcao(new EnviadorDeSms());
+          
+
+            //NotaFiscal.NotaFiscal notaFiscal = builder.ParaEmpresa("Caelum")
+            //                    .ComCnpj("123.456.789/0001-10")
+            //                    .ComItem(new ItemDaNota("item 1", 100.0))
+            //                    .ComItem(new ItemDaNota("item 2", 200.0))
+            //                    .ComItem(new ItemDaNota("item 3", 300.0))
+            //                    .ComObservacoes("entregar notaFiscal pessoalmente")
+            //                    .NaDataAtual()
+            //                    .Constroi();
+
+            /************Observer2****************/
+            NotaFiscalBuilder builder = new NotaFiscalBuilder();
+            builder.AdicionaAcao(new Multiplicador(2));
+            builder.AdicionaAcao(new Multiplicador(3));
+            builder.AdicionaAcao(new Multiplicador(5.5));
+
+            NotaFiscal.NotaFiscal notaFiscal = builder.ParaEmpresa("Caelum")
+                .ComCnpj("123.456.789/0001-10")
+                .ComItem(new ItemDaNota("item 1", 100.0))
+                .ComItem(new ItemDaNota("item 2", 200.0))
+                .ComItem(new ItemDaNota("item 3", 300.0))
+                .ComObservacoes("entregar notaFiscal pessoalmente")
+                .NaDataAtual()
+                .Constroi();
+            Console.ReadKey();
+
         }
+
+      
+
+
     }
 }

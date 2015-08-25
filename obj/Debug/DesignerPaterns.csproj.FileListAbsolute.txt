@@ -1,8 +1,8 @@
 c:\users\naiade.lima\documents\visual studio 2013\Projects\DesignerPaterns\DesignerPaterns\bin\Debug\DesignerPaterns.exe.config
 c:\users\naiade.lima\documents\visual studio 2013\Projects\DesignerPaterns\DesignerPaterns\bin\Debug\DesignerPaterns.exe
 c:\users\naiade.lima\documents\visual studio 2013\Projects\DesignerPaterns\DesignerPaterns\bin\Debug\DesignerPaterns.pdb
-c:\users\naiade.lima\documents\visual studio 2013\Projects\DesignerPaterns\DesignerPaterns\obj\Debug\DesignerPaterns.csprojResolveAssemblyReference.cache
 c:\users\naiade.lima\documents\visual studio 2013\Projects\DesignerPaterns\DesignerPaterns\obj\Debug\DesignerPaterns.exe
 c:\users\naiade.lima\documents\visual studio 2013\Projects\DesignerPaterns\DesignerPaterns\obj\Debug\DesignerPaterns.pdb
 c:\users\naiade.lima\documents\visual studio 2013\Projects\DesignerPaterns\DesignerPaterns\bin\Debug\Microsoft.UnitTestFramework.Extensions.dll
 c:\users\naiade.lima\documents\visual studio 2013\Projects\DesignerPaterns\DesignerPaterns\bin\Debug\Microsoft.UnitTestFramework.Extensions.xml
+C:\Users\naiade.lima\documents\visual studio 2013\Projects\DesignerPaterns\DesignerPaterns\obj\Debug\DesignerPaterns.csprojResolveAssemblyReference.cache

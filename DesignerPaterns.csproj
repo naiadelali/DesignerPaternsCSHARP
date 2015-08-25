@@ -54,6 +54,15 @@
     <Compile Include="CalculadorDeImpostos.cs" />
     <Compile Include="CalculoTeste.cs" />
     <Compile Include="Negativo .cs" />
+    <Compile Include="NotaFiscal\AcaoAposGerarNota .cs" />
+    <Compile Include="NotaFiscal\EnviadorDeEmail.cs" />
+    <Compile Include="NotaFiscal\EnviadorDeSms .cs" />
+    <Compile Include="NotaFiscal\ItemDaNotaBuilder.cs" />
+    <Compile Include="NotaFiscal\Multiplicador .cs" />
+    <Compile Include="NotaFiscal\NotaFiscalBuilder.cs" />
+    <Compile Include="NotaFiscal\ItemDaNota.cs" />
+    <Compile Include="NotaFiscal\NotaFiscal .cs" />
+    <Compile Include="NotaFiscal\NotaFiscalDao .cs" />
     <Compile Include="Positivo.cs" />
     <Compile Include="Conservador .cs" />
     <Compile Include="Conta .cs" />
@@ -102,6 +111,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
